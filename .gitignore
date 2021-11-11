@@ -27,3 +27,6 @@ changelog.generated.md
 
 # tests
 tests/coverage
+
+/unpackage/
+/.hbuilderx/

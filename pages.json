@@ -1,16 +1,138 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "pages": [
+    {
+      "path": "pages/basic/index",
+      "style": {
+        "navigationBarTitleText": "基础组件"
+      }
+    },
+    {
+      "path": "pages/basic/button",
+      "style": {
+        "navigationBarTitleText": "Button 按钮"
+      }
+    },
+    {
+      "path": "pages/basic/cell",
+      "style": {
+        "navigationBarTitleText": "Cell 单元格"
+      }
+    },
+    {
+      "path": "pages/basic/config-provider",
+      "style": {
+        "navigationBarTitleText": "ConfigProvider 全局配置"
+      }
+    },
+    {
+      "path": "pages/basic/typography",
+      "style": {
+        "navigationBarTitleText": "Typography 文本"
+      }
+    },
+    {
+      "path": "pages/basic/icon",
+      "style": {
+        "navigationBarTitleText": "Icon 图标"
+      }
+    },
+    {
+      "path": "pages/basic/image",
+      "style": {
+        "navigationBarTitleText": "Image 图片"
+      }
+    },
+    {
+      "path": "pages/basic/popup",
+      "style": {
+        "navigationBarTitleText": "Popup 弹出层"
+      }
+    },
+    {
+      "path": "pages/basic/styles",
+      "style": {
+        "navigationBarTitleText": "Style 内置样式"
+      }
+    },
+    {
+      "path": "pages/basic/toast",
+      "style": {
+        "navigationBarTitleText": "Toast 轻提示"
+      }
+    },
+    {
+      "path": "pages/form/index",
+      "style": {
+        "navigationBarTitleText": "表单组件"
+      }
+    },
+    {
+      "path": "pages/action/index",
+      "style": {
+        "navigationBarTitleText": "反馈组件"
+      }
+    },
+    {
+      "path": "pages/display/index",
+      "style": {
+        "navigationBarTitleText": "展示组件"
+      }
+    },
+    {
+      "path": "pages/navigation/index",
+      "style": {
+        "navigationBarTitleText": "导航组件"
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "u-vant"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "u-vant",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3f45ff",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/basic/index",
+        "iconPath": "static/images/tabBar/basic.png",
+        "selectedIconPath": "static/images/tabBar/basic-checked.png",
+        "text": "基础组件"
+      },
+      {
+        "pagePath": "pages/form/index",
+        "iconPath": "static/images/tabBar/form.png",
+        "selectedIconPath": "static/images/tabBar/form-checked.png",
+        "text": "表单组件"
+      },
+      {
+        "pagePath": "pages/action/index",
+        "iconPath": "static/images/tabBar/action.png",
+        "selectedIconPath": "static/images/tabBar/action-checked.png",
+        "text": "反馈组件"
+      },
+      {
+        "pagePath": "pages/display/index",
+        "iconPath": "static/images/tabBar/display.png",
+        "selectedIconPath": "static/images/tabBar/display-checked.png",
+        "text": "展示组件"
+      },
+      {
+        "pagePath": "pages/navigation/index",
+        "iconPath": "static/images/tabBar/navigation.png",
+        "selectedIconPath": "static/images/tabBar/navigation-checked.png",
+        "text": "导航组件"
+      }
+    ]
+  }
 }
