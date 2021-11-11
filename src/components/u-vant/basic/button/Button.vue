@@ -4,8 +4,10 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.extend({
   name: "Button",
   props: {
     //ButtonType: 'default' | 'primary' | 'info' | 'warning' | 'danger';
@@ -86,7 +88,7 @@ export default {
       default: false
     }
   }
-}
+})
 </script>
 
 <style scoped>

@@ -80,7 +80,6 @@
     "@dcloudio/vue-cli-plugin-uni-optimize": "^2.0.0-32920211029004",
     "@dcloudio/webpack-uni-mp-loader": "^2.0.0-32920211029004",
     "@dcloudio/webpack-uni-pages-loader": "^2.0.0-32920211029004",
-    "@types/uni-app": "^1.4.4",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-typescript": "*",
     "@vue/cli-service": "~4.5.0",
@@ -89,11 +88,12 @@
     "jest": "^25.4.0",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
-    "node-sass": "4.14.1",
     "postcss-comment": "^2.0.0",
-    "sass-loader": "7.3.1",
     "typescript": "^3.0.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "sass-loader": "7.3.1",
+    "node-sass": "4.14.1",
+    "@types/uni-app": "^1.4.4"
   },
   "browserslist": [
     "Android >= 4.4",

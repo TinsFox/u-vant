@@ -1,29 +1,72 @@
 <template>
-  <div class="demo">
-    <!--    <div class="title">{{ list.name }}</div>-->
-    <navigator v-for="(item,index) in list.items" :key="index" class="component-item"
-               :url="`/pages/${list.type}/${item.path}`" hover-class="navigator-hover">
-      <div>
-        {{ item.title }}
-      </div>
-    </navigator>
-    <!--    右侧图标-->
+  <div>
+    <view class="content">
+      <image class="logo" :src="logo"></image>
+      <view class="text-area">
+        <text class="title">{{ nav.title }}</text>
+      </view>
+    </view>
+    <div class="demo">
+      <navigator v-for="(item,index) in nav.items" :key="index" class="component-item"
+                 :url="`/pages/${nav.type}/${item.path}`" hover-class="navigator-hover">
+        <div>
+          {{ item.title }}
+        </div>
+      </navigator>
+      <!-- TODO 右侧图标-->
+    </div>
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue';
+
+interface INav {
+  title: string
+  type: string
+  items: Array<{ path: string, title: string }>
+}
+
+export default Vue.extend({
   name: "component-list",
   props: {
-    list: {
+    nav: {
       type: Object,
       default: {}
     }
+  },
+  data() {
+    return {
+      logo: "https://img.yzcdn.cn/vant/logo.png"
+    }
   }
-}
+})
 </script>
 
 <style scoped lang="scss">
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 100rpx;
+  width: 100rpx;
+  margin: 50rpx auto 50rpx;
+}
+
+.text-area {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 36rpx;
+  color: #8f8f94;
+}
+
 .demo {
   display: flex;
   flex-direction: column;
