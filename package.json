@@ -2,6 +2,7 @@
   "name": "u-vant",
   "version": "0.0.1",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "serve": "npm run dev:h5",
     "build": "npm run build:h5",
