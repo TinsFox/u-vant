@@ -1,6 +1,6 @@
 <template>
   <div>
-    <component-list :nav="nav"/>
+    <component-list :nav="nav" />
   </div>
 </template>
 
@@ -23,13 +23,12 @@ export default Vue.extend({
           { path: 'share-sheet', title: 'ShareSheet 分享面板' },
           { path: 'swipe-cell', title: 'SwipeCell 滑动单元格' },
         ],
-      }
-    }
+      },
+    };
   },
-  onLoad() {
-
+  onLaunch() {
+    console.log('App Launch');
   },
-  methods: {}
-})
+  methods: {},
+});
 </script>
-

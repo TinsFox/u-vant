@@ -1,12 +1,8 @@
 <template>
   <div>
-    <view class="content">
-      <image class="logo" :src="logo"></image>
-      <view class="text-area">
-        <text class="title">{{ nav.title }}</text>
-      </view>
-    </view>
     <div class="demo">
+      <image class="logo" :src="logo"></image>
+<!--      <text class="title">{{ nav.title }}</text>-->
       <navigator v-for="(item,index) in nav.items" :key="index" class="component-item"
                  :url="`/pages/${nav.type}/${item.path}`" hover-class="navigator-hover">
         <div>
@@ -44,27 +40,11 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 .logo {
   height: 100rpx;
   width: 100rpx;
-  margin: 50rpx auto 50rpx;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
+  margin: 40rpx auto 50rpx;
 }
 
 .demo {
@@ -76,7 +56,9 @@ export default Vue.extend({
 }
 
 .title {
+  text-align: left;
   color: $gray-4;
+  align-self: flex-start;
 }
 
 .component-item {
