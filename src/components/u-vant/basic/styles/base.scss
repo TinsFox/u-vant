@@ -1,9 +1,9 @@
-@import 'var.scss';
-@import 'css-variables.scss';
-@import 'normalize.scss';
-@import 'animation.scss';
-@import 'mixins/ellipsis.scss';
-@import 'mixins/hairline.scss';
+@import 'var';
+@import 'css-variables';
+@import 'normalize';
+@import 'animation';
+@import 'mixins/ellipsis';
+@import 'mixins/hairline';
 
 //.${rv-prefix}-ellipsis {
 //  .ellipsis();
