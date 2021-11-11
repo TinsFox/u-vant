@@ -1,10 +1,12 @@
 <template>
-  <div>button demo</div>
+  <div>
+    <vant-button>按钮1</vant-button>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "button"
+  name: "button",
 }
 </script>
 

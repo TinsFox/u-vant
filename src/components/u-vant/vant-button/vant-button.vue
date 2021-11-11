@@ -1,14 +1,14 @@
 <template>
-  <div>
-    <button>按钮</button>
-  </div>
+  <button class="btn">
+    <slot></slot>
+  </button>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 
 export default Vue.extend({
-  name: "Button",
+  name: "vant-button",
   props: {
     //ButtonType: 'default' | 'primary' | 'info' | 'warning' | 'danger';
     type: {
@@ -92,5 +92,8 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-
+.btn{
+  background: red;
+  color: lightblue;
+}
 </style>

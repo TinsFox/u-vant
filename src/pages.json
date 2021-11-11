@@ -134,5 +134,11 @@
         "text": "导航组件"
       }
     ]
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "vant-(.*)": "@/components/u-vant/vant-$1/vant-$1.vue"
+    }
   }
 }
