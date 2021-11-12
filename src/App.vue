@@ -2,18 +2,13 @@
 import Vue from 'vue';
 export default Vue.extend({
   mpType: 'app',
-  onLaunch() {
-    console.log('App Launch');
-  },
-  onShow() {
-    console.log('App Show');
-  },
-  onHide() {
-    console.log('App Hide');
-  },
+  onLaunch() {}
 });
 </script>
 
-<style>
+<style lang='scss'>
 /*每个页面公共css */
+@import "components/u-vant/vant-styles/normalize.scss";
+@import "src/components/u-vant/vant-styles/css-variables.scss";
+@import "components/u-vant/vant-styles/var.scss";
 </style>
