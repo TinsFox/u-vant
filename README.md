@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="logo" src="https://img.yzcdn.cn/vant/logo.png" width="240" style="margin-bottom: 10px;">
+    <img alt="logo" src="https://img.yzcdn.cn/vant/logo.png" width="100" style="margin-bottom: 10px;">
 </p>
 
 <h1 align="center">u Vant</h1>
